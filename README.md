@@ -107,8 +107,8 @@ New projects in C# have nullable reference types enabled by default. This helps 
 
 You will learn:
 
-* How compile-time warnings help you avoid null reference exceptions
-*How to use nullability to make the intent of your code clear
+* How compile-time warnings help you avoid null reference exceptions  
+* How to use nullability to make the intent of your code clear  
 * How to use the nullability operators: ?, !, ??  
 
 Resources:  
