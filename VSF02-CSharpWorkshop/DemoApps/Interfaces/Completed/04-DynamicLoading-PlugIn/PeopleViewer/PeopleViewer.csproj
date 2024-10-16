@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\PersonReader.Interface\PersonReader.Interface.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Page Update="PeopleViewerWindow.xaml">
+			<XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+	<Target Name="CopyDataFiles" AfterTargets="Build">
+		<ItemGroup>
+			<DataFiles Include="$(ProjectDir)..\AdditionalFiles\*.*" />
+		</ItemGroup>
+
+		<Copy SourceFiles="@(DataFiles)" DestinationFolder="$(TargetDir)\" SkipUnchangedFiles="true" />
+	</Target>
+
+	<Target Name="CopyDataReaders" AfterTargets="Build">
+		<ItemGroup>
+			<DataReaders Include="$(ProjectDir)..\ReaderAssemblies\**\*.*" />
+		</ItemGroup>
+
+		<Copy SourceFiles="@(DataReaders)" DestinationFolder="$(TargetDir)\ReaderAssemblies\%(RecursiveDir)" SkipUnchangedFiles="true" />
+	</Target>
+
+	<!---->
+</Project>

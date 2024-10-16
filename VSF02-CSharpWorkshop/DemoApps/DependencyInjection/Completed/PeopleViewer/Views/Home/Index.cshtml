@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1>Please make a selection</h1>
+    <ul>
+        <li><strong>@Html.ActionLink("Get People using Injected Reader (Constructor Injection)", "UseConstructorReader", "People")</strong></li>
+        <li><strong>@Html.ActionLink("Get People using Injected Reader (Method Injection)", "UseMethodReader", "People")</strong></li>
+    </ul>
+</div>

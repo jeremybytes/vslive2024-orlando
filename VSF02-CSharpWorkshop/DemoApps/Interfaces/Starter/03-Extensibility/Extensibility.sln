@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleViewer", "PeopleViewer\PeopleViewer.csproj", "{322F4556-B729-406A-844A-0FE91D87DBD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "People.Service\People.Service.csproj", "{951F60A4-6EB8-45F7-9FC3-2375A058F37C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.CSV", "PersonReader.CSV\PersonReader.CSV.csproj", "{57B19718-9B19-4E6C-9ED5-E26923A8D49D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.Interface", "PersonReader.Interface\PersonReader.Interface.csproj", "{AF09F1E3-5B2B-401D-A5C3-AB6D406A6229}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.Service", "PersonReader.Service\PersonReader.Service.csproj", "{8BE40EAB-1BD9-40F0-8292-F5E76275CBA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.SQL", "PersonReader.SQL\PersonReader.SQL.csproj", "{01C6E52A-9A2A-4D53-A71E-56F3AC5EC9BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readers", "Readers", "{DC58A678-529E-4105-B1C8-E04D0496AC2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9CEA9C05-A878-48EB-88EF-993EC1E9F1BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{322F4556-B729-406A-844A-0FE91D87DBD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{322F4556-B729-406A-844A-0FE91D87DBD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{322F4556-B729-406A-844A-0FE91D87DBD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{322F4556-B729-406A-844A-0FE91D87DBD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{951F60A4-6EB8-45F7-9FC3-2375A058F37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951F60A4-6EB8-45F7-9FC3-2375A058F37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951F60A4-6EB8-45F7-9FC3-2375A058F37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951F60A4-6EB8-45F7-9FC3-2375A058F37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B19718-9B19-4E6C-9ED5-E26923A8D49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B19718-9B19-4E6C-9ED5-E26923A8D49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B19718-9B19-4E6C-9ED5-E26923A8D49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B19718-9B19-4E6C-9ED5-E26923A8D49D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF09F1E3-5B2B-401D-A5C3-AB6D406A6229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF09F1E3-5B2B-401D-A5C3-AB6D406A6229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF09F1E3-5B2B-401D-A5C3-AB6D406A6229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF09F1E3-5B2B-401D-A5C3-AB6D406A6229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BE40EAB-1BD9-40F0-8292-F5E76275CBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE40EAB-1BD9-40F0-8292-F5E76275CBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE40EAB-1BD9-40F0-8292-F5E76275CBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE40EAB-1BD9-40F0-8292-F5E76275CBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01C6E52A-9A2A-4D53-A71E-56F3AC5EC9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C6E52A-9A2A-4D53-A71E-56F3AC5EC9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C6E52A-9A2A-4D53-A71E-56F3AC5EC9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C6E52A-9A2A-4D53-A71E-56F3AC5EC9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{951F60A4-6EB8-45F7-9FC3-2375A058F37C} = {9CEA9C05-A878-48EB-88EF-993EC1E9F1BC}
+		{57B19718-9B19-4E6C-9ED5-E26923A8D49D} = {DC58A678-529E-4105-B1C8-E04D0496AC2F}
+		{AF09F1E3-5B2B-401D-A5C3-AB6D406A6229} = {DC58A678-529E-4105-B1C8-E04D0496AC2F}
+		{8BE40EAB-1BD9-40F0-8292-F5E76275CBA1} = {DC58A678-529E-4105-B1C8-E04D0496AC2F}
+		{01C6E52A-9A2A-4D53-A71E-56F3AC5EC9BB} = {DC58A678-529E-4105-B1C8-E04D0496AC2F}
+	EndGlobalSection
+EndGlobal

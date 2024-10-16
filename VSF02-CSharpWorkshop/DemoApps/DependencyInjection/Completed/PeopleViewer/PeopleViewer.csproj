@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PeopleViewer.Common\PeopleViewer.Common.csproj" />
+    <ProjectReference Include="..\PersonDataReader.CSV\PersonDataReader.CSV.csproj" />
+    <ProjectReference Include="..\PersonDataReader.Decorators\PersonDataReader.Decorators.csproj" />
+    <ProjectReference Include="..\PersonDataReader.Service\PersonDataReader.Service.csproj" />
+    <ProjectReference Include="..\PersonDataReader.SQL\PersonDataReader.SQL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <MySourceFiles Include="$(ProjectDir)wwwroot\**\*.*" />
+  </ItemGroup>
+
+  <Target Name="CopyWWWFiles" AfterTargets="Build">
+    <Copy SourceFiles="@(MySourceFiles)" DestinationFiles="@(MySourceFiles->'$(TargetDir)wwwroot\%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+
+  <Target Name="CopyDataFiles" AfterTargets="Build">
+    <ItemGroup>
+      <DataFiles Include="$(ProjectDir)..\AdditionalFiles\*.*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(DataFiles)" DestinationFolder="$(TargetDir)\" SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>

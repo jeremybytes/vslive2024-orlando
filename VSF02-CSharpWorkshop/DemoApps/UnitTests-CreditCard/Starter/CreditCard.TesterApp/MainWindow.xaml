@@ -1,0 +1,29 @@
+﻿<Window x:Class="CreditCard.TesterApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreditCard.TesterApp"
+        mc:Ignorable="d"
+        Title="Credit Card Tester" Height="250" Width="1100"
+        FontSize="36">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <TextBlock>Credit Card Number:</TextBlock>
+        <TextBox x:Name="CreditCardTextBox" Grid.Column="1"
+                 Width="400" HorizontalAlignment="Left"
+                 TextChanged="CreditCardTextBox_TextChanged" />
+        <Button x:Name="TestButton" Grid.Column="2"
+                Content="Check Number" Click="TestButton_Click" />
+        <TextBlock x:Name="OutputTextBlock" Grid.Row="1" Grid.ColumnSpan="3"
+                   FontSize="84" HorizontalAlignment="Center" />
+    </Grid>
+</Window>

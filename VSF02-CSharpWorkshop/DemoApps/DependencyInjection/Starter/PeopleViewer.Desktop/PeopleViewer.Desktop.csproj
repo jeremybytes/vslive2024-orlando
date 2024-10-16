@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\PeopleViewer.Common\PeopleViewer.Common.csproj" />
+	  <ProjectReference Include="..\PeopleViewer.Presentation\PeopleViewer.Presentation.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Page Update="PeopleViewerWindow.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy &quot;$(ProjectDir)..\AdditionalFiles\*.*&quot; &quot;$(TargetDir)&quot; /Y" />
+	</Target>
+
+</Project>

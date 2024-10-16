@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleViewer", "PeopleViewer\PeopleViewer.csproj", "{B2674591-3424-4A13-9D3A-9CC025BA559A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "People.Service\People.Service.csproj", "{E87F7102-3263-4D8E-8DDF-4D17836B78E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.CSV", "PersonReader.CSV\PersonReader.CSV.csproj", "{214C5729-0848-40AB-B048-44A2190BA5E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.Interface", "PersonReader.Interface\PersonReader.Interface.csproj", "{FBA61538-B6C0-4686-8C08-82B5B62323EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.Service", "PersonReader.Service\PersonReader.Service.csproj", "{E6BBC24F-2FDF-4318-9B04-D6B5B0E77B56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.SQL", "PersonReader.SQL\PersonReader.SQL.csproj", "{85CC9186-4CB6-4E6A-BCAF-C7384B7D207D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readers", "Readers", "{A43538AC-D7FC-4E39-9DED-BE1166C3C34B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadersForCompile", "ReadersForCompile", "{9150A5E4-5820-42BF-A5B5-EA17C5F7013B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FC058B7A-9170-4888-B5D1-C23F8BC16F10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2674591-3424-4A13-9D3A-9CC025BA559A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2674591-3424-4A13-9D3A-9CC025BA559A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2674591-3424-4A13-9D3A-9CC025BA559A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2674591-3424-4A13-9D3A-9CC025BA559A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E87F7102-3263-4D8E-8DDF-4D17836B78E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87F7102-3263-4D8E-8DDF-4D17836B78E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87F7102-3263-4D8E-8DDF-4D17836B78E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87F7102-3263-4D8E-8DDF-4D17836B78E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214C5729-0848-40AB-B048-44A2190BA5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214C5729-0848-40AB-B048-44A2190BA5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214C5729-0848-40AB-B048-44A2190BA5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214C5729-0848-40AB-B048-44A2190BA5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA61538-B6C0-4686-8C08-82B5B62323EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA61538-B6C0-4686-8C08-82B5B62323EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA61538-B6C0-4686-8C08-82B5B62323EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA61538-B6C0-4686-8C08-82B5B62323EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BBC24F-2FDF-4318-9B04-D6B5B0E77B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BBC24F-2FDF-4318-9B04-D6B5B0E77B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BBC24F-2FDF-4318-9B04-D6B5B0E77B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BBC24F-2FDF-4318-9B04-D6B5B0E77B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85CC9186-4CB6-4E6A-BCAF-C7384B7D207D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85CC9186-4CB6-4E6A-BCAF-C7384B7D207D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85CC9186-4CB6-4E6A-BCAF-C7384B7D207D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85CC9186-4CB6-4E6A-BCAF-C7384B7D207D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E87F7102-3263-4D8E-8DDF-4D17836B78E4} = {FC058B7A-9170-4888-B5D1-C23F8BC16F10}
+		{214C5729-0848-40AB-B048-44A2190BA5E7} = {9150A5E4-5820-42BF-A5B5-EA17C5F7013B}
+		{FBA61538-B6C0-4686-8C08-82B5B62323EA} = {A43538AC-D7FC-4E39-9DED-BE1166C3C34B}
+		{E6BBC24F-2FDF-4318-9B04-D6B5B0E77B56} = {9150A5E4-5820-42BF-A5B5-EA17C5F7013B}
+		{85CC9186-4CB6-4E6A-BCAF-C7384B7D207D} = {9150A5E4-5820-42BF-A5B5-EA17C5F7013B}
+	EndGlobalSection
+EndGlobal
