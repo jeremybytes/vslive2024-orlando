@@ -45,7 +45,7 @@ Note: Install the "ASP.NET and web development" workload for the labs and sample
 [https://code.visualstudio.com/download](https://code.visualstudio.com/download)  
 
 * Labs Only repository  
-[https://github.com/jeremybytes/sdd-2024-workshop-labs-only](https://github.com/jeremybytes/sdd-2024-workshop-labs-only)  
+*Coming Soon!*  
 A repository with just the lab files for this workshop, so you do not need to download this entire repository.  
 
 
