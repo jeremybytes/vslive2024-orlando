@@ -1,0 +1,194 @@
+[
+  {
+    "ScheduleSet": "Standard",
+    "Device": 3,
+    "Info": {
+      "EventTime": "2015-05-01T13:00:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 1,
+    "IsEnabled": true
+  },
+  {
+    "ScheduleSet": "Standard",
+    "Device": 3,
+    "Info": {
+      "EventTime": "2015-05-01T13:00:00",
+      "TimeType": 0,
+      "RelativeOffset": "06:00:00",
+      "Type": 0
+    },
+    "Command": 0,
+    "IsEnabled": true
+  },
+  {
+    "ScheduleSet": "Standard",
+    "Device": 4,
+    "Info": {
+      "EventTime": "2015-05-02T00:00:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 1,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Standard",
+    "Device": 2,
+    "Info": {
+      "EventTime": "2015-05-01T19:05:13",
+      "TimeType": 1,
+      "RelativeOffset": "-00:30:00",
+      "Type": 0
+    },
+    "Command": 0,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Standard",
+    "Device": 4,
+    "Info": {
+      "EventTime": "2015-05-01T20:35:13",
+      "TimeType": 1,
+      "RelativeOffset": "01:00:00",
+      "Type": 0
+    },
+    "Command": 0,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Standard",
+    "Device": 2,
+    "Info": {
+      "EventTime": "2015-05-01T21:40:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 1,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Standard",
+    "Device": 4,
+    "Info": {
+      "EventTime": "2015-05-01T22:15:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 0,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T11:30:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 0,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T12:00:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 1,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T13:00:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 0,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T13:30:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 1,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T14:30:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 0,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T15:00:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 1,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T16:00:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 0,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T18:00:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 1,
+    "IsEnabled": false
+  },
+  {
+    "ScheduleSet": "Summer",
+    "Device": 6,
+    "Info": {
+      "EventTime": "2015-05-01T23:30:00",
+      "TimeType": 0,
+      "RelativeOffset": "00:00:00",
+      "Type": 0
+    },
+    "Command": 1,
+    "IsEnabled": false
+  }
+]
