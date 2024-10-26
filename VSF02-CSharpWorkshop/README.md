@@ -45,7 +45,7 @@ Note: Install the "ASP.NET and web development" workload for the labs and sample
 [https://code.visualstudio.com/download](https://code.visualstudio.com/download)  
 
 * Labs Only repository  
-*Coming Soon!*  
+[https://github.com/jeremybytes/vslive2024-orlando-workshop-labs](https://github.com/jeremybytes/vslive2024-orlando-workshop-labs)  
 A repository with just the lab files for this workshop, so you do not need to download this entire repository.  
 
 

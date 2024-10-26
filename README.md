@@ -62,7 +62,7 @@ Note: Install the "ASP.NET and web development" workload for the labs and sample
 Resources:  
 * Slides: [/VSF02-CSharpWorkshop/SLIDES-CSharp-Workshop.pdf](./VSF02-CSharpWorkshop/SLIDES-CSharp-Workshop.pdf)
 * Resources: [/VSF02-CSharpWorkshop/](./VSF02-CSharpWorkshop/)  
-* Labs (for easy download): *Coming Soon*
+* Labs (for easy download): [https://github.com/jeremybytes/vslive2024-orlando-workshop-labs](https://github.com/jeremybytes/vslive2024-orlando-workshop-labs)
 
 ---  
 
