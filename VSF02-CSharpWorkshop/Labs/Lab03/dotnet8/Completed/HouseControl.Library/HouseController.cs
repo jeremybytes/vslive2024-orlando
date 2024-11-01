@@ -11,19 +11,19 @@ public class HouseController
         set => commander = value;
     }
 
-    private System.Timers.Timer scheduler = new(60000);
-    private Schedule schedule;
+    private readonly System.Timers.Timer scheduler = new(60000);
+    private readonly Schedule schedule;
 
     public HouseController(Schedule schedule)
     {
         this.schedule = schedule;
 
-        scheduler.Elapsed += scheduler_Elapsed;
+        scheduler.Elapsed += Scheduler_Elapsed;
         scheduler.AutoReset = true;
         scheduler.Start();
     }
 
-    private async void scheduler_Elapsed(object? sender, ElapsedEventArgs e)
+    private async void Scheduler_Elapsed(object? sender, ElapsedEventArgs e)
     {
         var itemsToProcess = schedule.GetCurrentScheduleItems();
 
@@ -31,13 +31,13 @@ public class HouseController
             await SendCommand(item.Device, item.Command);
 
 #if DEBUG
-        Console.Write($"Schedule Items Processed: {itemsToProcess.Count()} - ");
+        Console.Write($"Schedule Items Processed: {itemsToProcess.Count} - ");
 #endif
 
         schedule.RollSchedule();
 
 #if DEBUG
-        Console.WriteLine($"Total Items: {schedule.Count} - Active Items: {schedule.Count(si => si.IsEnabled).ToString()}");
+        Console.WriteLine($"Total Items: {schedule.Count} - Active Items: {schedule.Count(si => si.IsEnabled)}");
 #endif
     }
 

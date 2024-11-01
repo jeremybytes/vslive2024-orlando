@@ -2,11 +2,11 @@
 
 internal static class MessageGenerator
 {
-    private static string header = "11010101" + "10101010";
-    private static string codeA = "01100000";
-    private static string footer = "10101101";
+    private static readonly string header = "11010101" + "10101010";
+    private static readonly string codeA = "01100000";
+    private static readonly string footer = "10101101";
 
-    private static List<string> onCommands = new List<string>
+    private static readonly List<string> onCommands = new()
     {
         "", // dummy entry
         "00000000", // 1 on
@@ -19,7 +19,7 @@ internal static class MessageGenerator
         "01011000", // 8 on
     };
 
-    private static List<string> offCommands = new List<string>
+    private static readonly List<string> offCommands = new()
     {
         "", // dummy entry
         "00100000", // 1 off

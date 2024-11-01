@@ -5,11 +5,11 @@ namespace HouseControl.Library;
 
 public class SerialCommander : ICommander
 {
-    private SerialPort serialPort;
-    private int baud = 115200;
-    private int databits = 8;
-    private Parity parity = Parity.None;
-    private StopBits stopbits = StopBits.One;
+    private readonly SerialPort serialPort;
+    private readonly int baud = 115200;
+    private readonly int databits = 8;
+    private readonly Parity parity = Parity.None;
+    private readonly StopBits stopbits = StopBits.One;
 
     public SerialCommander()
     {

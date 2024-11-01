@@ -56,6 +56,7 @@ class Program
         var sunsetProvider = new SolarTimesSunsetProvider(28.4810,-81.5074);
         var cachingSunsetProvider = new CachingSunsetProvider(sunsetProvider);
         var schedule = new Schedule(fileName, cachingSunsetProvider);
+
         var controller = new HouseController(schedule);
         controller.Commander = new FakeCommander();
 

@@ -54,11 +54,10 @@ class Program
         //28.4672,-81.4687 = Royal Pacific Hotel
 
         IKernel container = new StandardKernel();
-
         ScheduleFileName fileName = new(AppDomain.CurrentDomain.BaseDirectory + "ScheduleData");
         container.Bind<ScheduleFileName>().ToConstant(fileName);
 
-        var latLong = new LatLongLocation(28.4810,-81.5074);
+        var latLong = new LatLongLocation(28.4810, -81.5074);
         container.Bind<LatLongLocation>().ToConstant(latLong);
         container.Bind<ISunsetProvider>().To<CachingSunsetProvider>()
             .WithConstructorArgument<ISunsetProvider>(
@@ -70,7 +69,8 @@ class Program
 #endif
         var controller = container.Get<HouseController>();
 
-        var sunset = container.Get<ISunsetProvider>().GetSunset(DateTime.Today.AddDays(1));
+        var sunset = container.Get<ISunsetProvider>()
+            .GetSunset(DateTime.Today.AddDays(1));
         Console.WriteLine($"Sunset Tomorrow: {sunset:G}");
 
         return controller;

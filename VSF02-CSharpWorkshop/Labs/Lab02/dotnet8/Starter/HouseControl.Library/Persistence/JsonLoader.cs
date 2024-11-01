@@ -7,7 +7,7 @@ public class JsonLoader : IScheduleLoader
     public IEnumerable<ScheduleItem> LoadScheduleItems(string filename)
     {
         var output = new List<ScheduleItem>();
-        filename = filename + ".json";
+        filename += ".json";
 
         if (File.Exists(filename))
         {

@@ -2,7 +2,7 @@
 
 public class TradfriCommander
 {
-    HttpClient client = new();
+    private readonly HttpClient client = new();
 
     public TradfriCommander(Uri uri)
     {

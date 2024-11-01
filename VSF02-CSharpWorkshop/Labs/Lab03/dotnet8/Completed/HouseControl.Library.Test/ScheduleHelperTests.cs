@@ -203,7 +203,7 @@ public class ScheduleHelperTests
         // Arrange
         DateTimeOffset thursday = new(2024, 02, 29, 16, 35, 22, timeZoneOffset);
         SetCurrentTime(thursday);
-        DateTimeOffset expected = new DateTimeOffset(thursday.Date, timeZoneOffset);
+        DateTimeOffset expected = new(thursday.Date, timeZoneOffset);
 
         // Act
         var actual = ScheduleHelper.Today();

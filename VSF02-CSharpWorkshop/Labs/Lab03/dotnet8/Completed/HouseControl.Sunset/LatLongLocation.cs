@@ -1,3 +1,5 @@
 ﻿namespace HouseControl.Sunset;
 
-public record LatLongLocation(double Latitude, double Longitude) { }
+public record LatLongLocation(
+    double Latitude, double Longitude)
+{ }

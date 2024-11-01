@@ -1,19 +1,9 @@
-﻿using NUnit.Framework.Constraints;
-
-namespace HouseControl.Library.Test;
+﻿namespace HouseControl.Library.Test;
 
 [TestFixture]
 public class ScheduleTests
 {
-    readonly ScheduleFileName fileName = 
-        new(AppDomain.CurrentDomain.BaseDirectory + "\\ScheduleData");
-
-    [SetUp]
-    public void Setup()
-    {
-        // Reset TimeProvider to the default that uses the real time
-        ScheduleHelper.TimeProvider = null;
-    }
+    readonly ScheduleFileName fileName = new(AppDomain.CurrentDomain.BaseDirectory + "\\ScheduleData");
 
     [Test]
     public void ScheduleItems_OnCreation_IsPopulated()
@@ -33,7 +23,7 @@ public class ScheduleTests
         var currentTime = DateTimeOffset.Now;
 
         // Assert
-        foreach(var item in schedule)
+        foreach (var item in schedule)
         {
             Assert.That(item.Info.EventTime, Is.GreaterThan(currentTime));
         }
@@ -45,7 +35,7 @@ public class ScheduleTests
         // Arrange
         var schedule = new Schedule(fileName, new FakeSunsetProvider());
         var currentTime = DateTimeOffset.Now;
-        foreach (var item in schedule)
+        foreach(var item in schedule)
         {
             item.Info.EventTime = item.Info.EventTime - TimeSpan.FromDays(30);
             Assert.That(item.Info.EventTime, Is.LessThan(currentTime),
@@ -67,7 +57,6 @@ public class ScheduleTests
     {
         // Arrange
         var schedule = new Schedule(fileName, new FakeSunsetProvider());
-
         var originalCount = schedule.Count;
 
         var newItem = new ScheduleItem(
@@ -79,7 +68,8 @@ public class ScheduleTests
                 Type = ScheduleType.Once,
             },
             true,
-            "");
+            ""
+        );
         schedule.Add(newItem);
 
         var newCount = schedule.Count;
@@ -98,7 +88,6 @@ public class ScheduleTests
     {
         // Arrange
         var schedule = new Schedule(fileName, new FakeSunsetProvider());
-
         var originalCount = schedule.Count;
 
         var newItem = new ScheduleItem(
@@ -110,7 +99,8 @@ public class ScheduleTests
                 Type = ScheduleType.Once,
             },
             true,
-            "");
+            ""
+        );
         schedule.Add(newItem);
 
         var newCount = schedule.Count;

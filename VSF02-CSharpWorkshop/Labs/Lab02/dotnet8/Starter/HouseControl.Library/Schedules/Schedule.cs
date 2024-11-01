@@ -4,7 +4,7 @@ namespace HouseControl.Library;
 
 public class Schedule : List<ScheduleItem>
 {
-    private string filename;
+    private readonly string filename;
 
     private IScheduleLoader? loader;
     public IScheduleLoader Loader

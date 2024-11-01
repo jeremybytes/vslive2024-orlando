@@ -14,8 +14,8 @@ public class SolarServiceSunsetProvider : ISunsetProvider
 
     public SolarServiceSunsetProvider(LatLongLocation latLong)
     {
-        this.latitude = latLong.Latitude;
-        this.longitude = latLong.Longitude;
+        latitude = latLong.Latitude;
+        longitude = latLong.Longitude;
     }
 
     public DateTimeOffset GetSunrise(DateTime date)

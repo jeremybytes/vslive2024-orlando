@@ -104,7 +104,7 @@ Now that you have an interface, update the `HouseController` class to use it.
 ~~~csharp
 public class HouseController
 {
-    private ICommander commander;
+    private readonly ICommander commander;
     // other code omitted
 }
 ~~~
@@ -282,7 +282,7 @@ The overall idea is create a property that is initialized with a default depende
 ~~~csharp
 public class HouseController
 {
-    private ICommander commander;
+    private readonly ICommander commander;
     // other code omitted
 
     public HouseController(Schedule schedule, ICommander commander)
@@ -300,7 +300,7 @@ public class HouseController
 ~~~csharp
 public class HouseController
 {
-    private ICommander commander;
+    private readonly ICommander commander;
     // other code omitted
 
     public HouseController(Schedule schedule)
@@ -324,7 +324,7 @@ public ICommander Commander
 }
 ~~~
 
-*Also notice that the backing field is now nullable (as denoted by the "?"). In Visual Studio 2022, there will also be a warning on the getter that `commander` may be null.*  
+*Notice that the backing field no longer readonly, and it is also now nullable (as denoted by the "?"). In Visual Studio 2022, there will also be a warning on the getter that `commander` may be null.*  
 
 4. If `commander` is null in the getter, set the value to a new `SerialCommander`.  
 

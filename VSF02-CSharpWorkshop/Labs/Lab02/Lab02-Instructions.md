@@ -121,10 +121,6 @@ public static bool IsInFuture(DateTimeOffset checkTime)
     return checkTime > ScheduleHelper.Now();
 }
 ~~~
-~~~csharp
-    //var nextDay = DateTimeOffset.Now.Date.AddDays(1);
-    var nextDay = ScheduleHelper.Now().Date.AddDays(1);
-~~~
 
 You should have 3 replacements in `ScheduleHelper`.  
 
@@ -1051,7 +1047,7 @@ public void Today_ReturnsConfiguredDate()
     // Arrange
     DateTimeOffset thursday = new(2024, 02, 29, 16, 35, 22, timeZoneOffset);
     SetCurrentTime(thursday);
-    DateTimeOffset expected = new DateTimeOffset(thursday.Date, timeZoneOffset);
+    DateTimeOffset expected = new(thursday.Date, timeZoneOffset);
 
     // Act
     var actual = ScheduleHelper.Today();

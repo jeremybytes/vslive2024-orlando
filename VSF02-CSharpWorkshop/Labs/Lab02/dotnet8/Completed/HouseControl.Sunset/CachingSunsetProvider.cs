@@ -1,9 +1,9 @@
-﻿
-namespace HouseControl.Sunset;
+﻿namespace HouseControl.Sunset;
 
 public class CachingSunsetProvider : ISunsetProvider
 {
     private readonly ISunsetProvider wrappedProvider;
+
     private DateTime dataDate;
     private DateTimeOffset sunrise;
     private DateTimeOffset sunset;
