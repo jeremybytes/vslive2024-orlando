@@ -13,4 +13,5 @@ You will learn:
 * Slides: [Code is for Humans](SLIDES-Code-is-for-Humans.pdf)  
 * Refactoring Sample: [Demo Code](./Completed/)
 * Additional Project: [The Watcher](https://github.com/jeremybytes/the-watcher)  
+* Article: [When does DRY become ARID?](https://jeremybytes.blogspot.com/2015/08/when-does-dry-become-arid.html)  
 ---
