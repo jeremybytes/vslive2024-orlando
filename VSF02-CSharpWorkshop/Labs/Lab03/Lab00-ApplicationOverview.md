@@ -139,7 +139,7 @@ Stop the debugger. Then you will start the service and try again.
 
 Since you will not edit the service, I often find it easiest to start the service outside of the IDE. Then I can just leave it running while working with the rest of the application. (As an alternative, you can configure your debugger to start both `SolarCalculator.Service` and `HousecontrolAgent` projects.)  
 
-From the comamnd line, navigate to the `SolarCalculator.Service` project and type `dotnet run`.  
+From the command line, navigate to the `SolarCalculator.Service` project and type `dotnet run`.  
 
 ~~~
 PS C:\...\Starter\SolarCalculator.Service> dotnet run
